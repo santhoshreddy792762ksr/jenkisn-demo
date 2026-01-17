@@ -1,14 +1,11 @@
 pipeline {
-
     agent any
 
-    stages{
-
-        stage{
-            steps{
-                echo "whoami"
+    stages {
+        stage('WhoAmI') {
+            steps {
+                sh 'whoami'
             }
         }
-        
     }
 }
